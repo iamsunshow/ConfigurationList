@@ -28,12 +28,12 @@ set hlsearch				            " 设置搜索时高亮显示
 set whichwrap=h,l,<,>			        " 设置在光标到达最右边或者最左边时继续向上一行或者下一行移动
 set autoindent                          " 设置换行编辑时自动缩进
 set expandtab                           " 设置将tab转换为空格
-set tabstop=4							" 设置点击tab时缩进的空格数量为4
-set shiftwidth=4						" 设置通过批量缩进格式化(即>>)缩进的数量为4
-set softtabstop=4						" 设置混合模式和非混合模式时tab的缩进格式：
-												" 当expandtab为启用时，tabstop和softtabstop以softtabstop为准，shiftwidth不受影响
-												" 当expandtab为禁用时，softtabstop为6，tabstop为4，那么点击tab后缩进将由两个空格及一个制表符组成 
+set tabstop=4				" 设置点击tab时缩进的空格数量为4
+set shiftwidth=4			" 设置通过批量缩进格式化(即>>)缩进的数量为4
+set softtabstop=4			" 设置混合模式和非混合模式时tab的缩进格式：
+					" 当expandtab为启用时，tabstop和softtabstop以softtabstop为准，shiftwidth不受影响
+					" 当expandtab为禁用时，softtabstop为6，tabstop为4，那么点击tab后缩进将由两个空格及一个制表符组成 
 set backspace=start,eol,indent          " 设置backspace工作模式：
-					                            " 当光标前有若干字符，随后进入insert模式输入1个字符，然后按下大于1次backspace，backspace失效，发出“嘟嘟”的声音，此时开启start则可以继续向前删除;
-                                                " 当有多行字符，在其中一行字符的行首开启insert模式，按下backspace则失效，此时开启eol则可以删除上一行的字符；
-                                                " 当自动缩进开启后，延续首行缩进的下一行是无法删除缩进字符的，当开启indent则可以删除缩进字符
+					" 当光标前有若干字符，随后进入insert模式输入1个字符，然后按下大于1次backspace，backspace失效，发出“嘟嘟”的声音，此时开启start则可以继续向前删除;
+                                        " 当有多行字符，在其中一行字符的行首开启insert模式，按下backspace则失效，此时开启eol则可以删除上一行的字符；
+                                        " 当自动缩进开启后，延续首行缩进的下一行是无法删除缩进字符的，当开启indent则可以删除缩进字符
