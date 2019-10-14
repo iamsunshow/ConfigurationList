@@ -1,0 +1,8 @@
+[user]
+	name = iamsunshow
+	email = 88131787@qq.com
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
